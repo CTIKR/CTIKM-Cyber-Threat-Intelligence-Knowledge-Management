@@ -8,13 +8,21 @@ Threat Intelligence) articles. The key idea of CTIKR is to the knowledge of cybe
 
 ## Requirements
 Python Version >= 3.8.0
+
 Python Library:
+
 numpy >= 1.23.4
+
 scikit-learn >= 1.1.2
+
 simpletransformers >= 0.63.9
+
 hdbscan >= 0.8.28
+
 torch >= 1.12.1
+
 networkx >= 2.8.7
+
 cdlib >= 0.2.6
 
 ## Usage
