@@ -3,8 +3,8 @@
 Implementation of the paper *CTIKR: Towards Automatic Knowledge Management from Cyber Threat Intelligence*.
 
 ## Introduction
-CTIKR(Cyber Threat Intelligence Knowledge Representation) is a tool to building a general knowledge representation of the cyber threat knowledge in OSCTI (Open-Source Cyber
-Threat Intelligence) articles. The key idea of CTIKR is to the knowledge of cyber threats can be represented by the structured information of the CTI sentences, which are the sentences that describe the Cyber attack tactics or the Cyber attack behaviors.
+CTIKR(Cyber Threat Intelligence Knowledge Representation) is a tool to extract knowledge from open source CTI blogs. It uses a sentence classification NLP model to identify sentences that are related to cyber attacks from article, then clusters the articles based on the sentences. Meanwhile, it extracts knowledge graphs from the sentences.
+For a given article as the input, CTKIR can extract the following information: the most important sentences that describe attack's behavior and the tactics they used, the Cyber attack tactics included in the article, the graph of attack behavior, the cluster of the article. Based on those article information, CTKIR achieved the following applications on large scale articles: Entity Behavior Discovery, Topic Classification, Attack Campaign Discovery, Kill Chain Summary.
 
 ## Requirements
 Python Version >= 3.8.0
