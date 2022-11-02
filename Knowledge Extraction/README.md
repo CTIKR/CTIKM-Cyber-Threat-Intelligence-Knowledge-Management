@@ -3,7 +3,7 @@
 The first step of CTIKR is to train classification model and automatically obtain different types of CTI sentences from OSCTI articles using NLP model. We use the python library **simpletransformers** to perform model training and inference.
 
 ## Introduction
-This file **CTI_sentences.xlsx** contains sentences from OSCTI articles for the purpose of training of the classification model and following evaluation. The 'Sentence' column contains the sentence text, the 'Tactics' column contains the sentence's Cyber attack tactic label, and the 'Behavior' column contains the sentence's Cyber attack behavior label.
+The file **CTI_sentences.xlsx** contains sentences from OSCTI articles for the purpose of training of the classification model and following evaluation. The 'Sentence' column contains the sentence text, the 'Tactics' column contains the sentence's Cyber attack tactic label, and the 'Behavior' column contains the sentence's Cyber attack behavior label.
 
 We labeled every sentences of the 672 article from ATT&CK knowledge base, and got 8,408 sentences. Then, we use active learning with uncertainty sampling to label 9,012 sentences from 5,110 OSCTI articles.
 
