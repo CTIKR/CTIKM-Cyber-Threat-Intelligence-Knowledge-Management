@@ -1,7 +1,5 @@
 # CTIKR
 
-Implementation of the paper *CTIKR: Towards Automatic Knowledge Management from Cyber Threat Intelligence*.
-
 ## Introduction
 CTIKR(Cyber Threat Intelligence Knowledge Representation) is a tool to extract knowledge from open source CTI articles. It uses a sentence classification NLP model to identify sentences that are related to cyber attacks from article, then clusters the articles based on the sentences. Meanwhile, it extracts knowledge graphs from the sentences.
 
