@@ -5,7 +5,7 @@ CTIKR uses the two output models from the knowledge extraction component on the 
 
 From the 52,354 training OSCTI articles, CTIKR models identified 8,456 articles that contain CTI sentences. We split them into 6,764 training articles and 1,692 testing articles. The training articles are used to train the article clustering model. The testing articles are used to evaluate the clustering and application of article topic classification. The 'Article Clustering Results Training Set.xlsx' contains these 6,764 articles and their corresponding feature vectors. Each row in the excel file represents a OSCTI article, and the columns shows their features. These feature are: results of tactic sentences and behavior sentences, tactics statistics of tactics sentences and CTI Sentences, sentence statistics of all sentences and CTI Sentences, IOC Words statistics of All sentences and CTI sentences, reduced dimensional model inference result embedding and reduced dimensional CTI sentence embedding. The 52,354 articles are clustered into 18 groups with meaningful topics as follows:
 
-| Group | Number of Articles in whole dataset | Topic                                                                                                                                 | Rate of Same Topic |
+| Group | Number of Articles | Topic                                                                                                                                 | Rate of Same Topic |
 |-------|--------------------:|---------------------------------------------------------------------------------------------------------------------------------------|--------------------|
 | 0     |                 279 | Attacker claims excessive privileges for malicious code, reads data and connect to attacker's server.                                 |             80.00% |
 | 1     |                 271 | Attacker scans other systems in the local network and spreads malicious code.                                                         |             85.00% |
@@ -36,7 +36,7 @@ To evaluate the clustering result, run the **Calculation of silhouette coefficie
 
 Our article clusters has following silhouette coefficient: 
 
-| Group | Number of Articles in whole dataset  | Silhouette Coefficient |
+| Group | Number of Articles | Silhouette Coefficient |
 |-------|--------------------|------------------------|
 | 0     | 279                | 0.254                  |
 | 1     | 271                | 0.267                  |
