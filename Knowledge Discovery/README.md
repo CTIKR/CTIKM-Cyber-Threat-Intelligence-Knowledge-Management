@@ -10,9 +10,13 @@ For topic classification, open the **Topic Classification.ipynb**, and load the 
 
 ## Topic Classification result
 Title: Life Isn't So Beautiful Naked Security
+
 Group: 4 (Attacker enter the target system without being noticed)
+
 Topic Classification result: True
+
 Model result: 
+
 | Sentences                                                                                                                                                                                                |   Attack tactics|Actual behavior|
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------:|:------------------------:|
 | by Sophos                                                                                                                                                                                                |            None            |           FALSE          |
@@ -41,9 +45,13 @@ Model result:
 | exe ( detected as Troj / Agent FZB ) drops 2 kernel driver rootkits both of which are used to  stealth the Troj / Agent FZB Trojan ( detected as Troj / NTRoot KBY and Troj / Agent FVT respectively ) . | Execution, Defense Evasion |           TRUE           |
 
 Title: GrayKey iPhone unlocker poses serious security concerns Malwarebytes Labs Malwarebytes Labs" and was incorrectly categorized
+
 Group: 10 (Malicious code downloads additional malicious programs and command from server and steals local data without uploading to the server.)
+
 Topic Classification result: False
+
 Model result: 
+
 | Sentences                                                                                                                                                                                                                                                                                                       | Attack tactics                  | Actual behavior |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|-----------------|
 | Ever since the case of the San Bernadino shooter pitted Apple against the FBI over the unlocking of an i Phone , opinions have been split on providing backdoor access to the i Phone for law enforcement .                                                                                                     | None                            | FALSE           |
