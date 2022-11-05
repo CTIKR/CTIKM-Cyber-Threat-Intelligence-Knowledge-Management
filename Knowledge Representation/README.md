@@ -36,29 +36,27 @@ To evaluate the clustering result, run the **Calculation of silhouette coefficie
 
 Our 
 
-| Group   | Number of articles  | Silhouette Coefficient | Rate With Same Topic |
-|---------|---------------------|------------------------|----------------------|
-| 0       | 279                 | 0.254                  | 80.00%               |
-| 1       | 271                 | 0.267                  | 85.00%               |
-| 2       | 387                 | 0.103                  | 85.00%               |
-| 3       | 513                 | 0.163                  | 70.00%               |
-| 4       | 137                 | 0.167                  | 100.00%              |
-| 5       | 186                 | 0.335                  | 85.00%               |
-| 6       | 289                 | 0.242                  | 80.00%               |
-| 7       | 949                 | 0.354                  | 85.00%               |
-| 8       | 157                 | 0.171                  | 85.00%               |
-| 9       | 725                 | 0.358                  | 70.00%               |
-| 10      | 255                 | 0.101                  | 70.00%               |
-| 11      | 126                 | 0.206                  | 75.00%               |
-| 12      | 646                 | 0.334                  | 55.00%               |
-| 13      | 196                 | 0.159                  | 66.70%               |
-| 14      | 165                 | 0.126                  | 65.00%               |
-| 15      | 491                 | 0.356                  | 57.10%               |
-| 16      | 161                 | 0.242                  | 50.00%               |
-| 17      | 1200                | 0.172                  | 13.30%               |
-| 18      | 141                 | 0.095                  | 45.00%               |
-| Noise   | 1182                | -0.411                 | n/a                  |
-| overall | 8456                | 0.157                  | 71.00%               |
+| Group | Number of articles | Silhouette Coefficient |
+|-------|--------------------|------------------------|
+| 0     | 279                | 0.254                  |
+| 1     | 271                | 0.267                  |
+| 2     | 387                | 0.103                  |
+| 3     | 513                | 0.163                  |
+| 4     | 137                | 0.167                  |
+| 5     | 186                | 0.335                  |
+| 6     | 289                | 0.242                  |
+| 7     | 949                | 0.354                  |
+| 8     | 157                | 0.171                  |
+| 9     | 725                | 0.358                  |
+| 10    | 255                | 0.101                  |
+| 11    | 126                | 0.206                  |
+| 12    | 646                | 0.334                  |
+| 13    | 196                | 0.159                  |
+| 14    | 165                | 0.126                  |
+| 15    | 491                | 0.356                  |
+| 16    | 161                | 0.242                  |
+| 17    | 1200               | 0.172                  |
+| 18    | 141                | 0.095                  |
 
 Additionally, run the **Generate the 2D visualization of the training set** cell to visualize the clustering result based on reduced dimensional feature vectors. Each point represents an article, and the color of the point represents the cluster of the article. Our clustering result is shown in the following figure.
 
