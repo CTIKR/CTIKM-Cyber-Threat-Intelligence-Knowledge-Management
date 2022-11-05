@@ -1,7 +1,5 @@
 # Knowledge Representation
 
-The second part of CTIKR is to represent knowledge through article clusters and triple graphs.
-
 ## Introduction
 CTIKR uses the two output models from the knowledge extraction component on the training OSCTI training articles to identify the CTI sentences from articles. Based on these CTI sentences, CTIKR then clusters the training OSCTI articles based on the features of their CTI sentences and outputs article clusters as the first type of the knowledge representation. 
 
