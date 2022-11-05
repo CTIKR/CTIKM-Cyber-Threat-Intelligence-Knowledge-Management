@@ -5,27 +5,27 @@ CTIKR uses the two output models from the knowledge extraction component on the 
 
 The 'Article Clustering Results Training Set.xlsx' contains the 52,354 articles from the OSCTI training set and their corresponding feature vectors. Each row in the excel file represents a OSCTI article, and the columns shows the features. These feature are: results of tactic sentences and behavior sentences, tactics statistics of tactics sentences and CTI Sentences, sentence statistics of all sentences and CTI Sentences, IOC Words statistics of All sentences and CTI sentences, reduced dimensional model inference result embedding and reduced dimensional CTI sentence embedding. The 52,354 articles are clustered into 18 groups with meaningful topics as follows:
 
-| Group | Topic                                                                                                                                 | Rate of Same Topic |
-|-------|---------------------------------------------------------------------------------------------------------------------------------------|--------------------|
-| 0     | Attacker claims excessive privileges for malicious code, reads data and connect to attacker's server.                                 |             80.00% |
-| 1     | Attacker scans other systems in the local network and spreads malicious code.                                                         |             85.00% |
-| 2     | Attacker hide themselves and evade security systems to achieve persistence in target system.                                          |             85.00% |
-| 3     | Attacker compromises target systems such as running ransomware, performing bitcoin mining or DDOS attacks.                            |             70.00% |
-| 4     | Attacker enter the target system without being noticed.                                                                               |            100.00% |
-| 5     | Malicious code connects to a server on Interent and send some data to it.                                                             |             85.00% |
-| 6     | Malicious code connects to attacker's server and send some very sensitive data such as passwords, photos or IP address.               |             80.00% |
-| 7     | Attacker only enters the target system without performing other attacks.                                                              |             85.00% |
-| 8     | Attacker enters the target system and connects to attacker's server to download and run additional malware.                           |             85.00% |
-| 9     | Attacker uses a exploit to execute arbitrary code.                                                                                    |             70.00% |
-| 10    | Malicious code downloads additional malicious programs and command from server and steals local data without uploading to the server. |             70.00% |
-| 11    | Attacker directly executes the code and connects to the server.                                                                       |             75.00% |
-| 12    | Malicious code connects to the attacker's server and downloads other malicious code without executing it.                             |             55.00% |
-| 13    | Normal software execution and data reading behavior.                                                                                  |             66.70% |
-| 14    | Malicious code executes undetected, connects to attacker's server and steals data.                                                    |             65.00% |
-| 15    | Malicious code executes undetected.                                                                                                   |             57.10% |
-| 16    | Malicious code executes undetected, steals data without connection to attacker's server.                                              |             50.00% |
-| 17    | The attacker performs the attack through multiple steps and eventually steals the data.                                               |             13.30% |
-| 18    | The attacker is already in the system and the deployed malicious code steals the data.                                                |             45.00% |
+| Group | Number of Articles  | Topic                                                                                                                                 | Rate of Same Topic |
+|-------|--------------------:|---------------------------------------------------------------------------------------------------------------------------------------|--------------------|
+| 0     |                 279 | Attacker claims excessive privileges for malicious code, reads data and connect to attacker's server.                                 |             80.00% |
+| 1     |                 271 | Attacker scans other systems in the local network and spreads malicious code.                                                         |             85.00% |
+| 2     |                 387 | Attacker hide themselves and evade security systems to achieve persistence in target system.                                          |             85.00% |
+| 3     |                 513 | Attacker compromises target systems such as running ransomware, performing bitcoin mining or DDOS attacks.                            |             70.00% |
+| 4     |                 137 | Attacker enter the target system without being noticed.                                                                               |            100.00% |
+| 5     |                 186 | Malicious code connects to a server on Interent and send some data to it.                                                             |             85.00% |
+| 6     |                 289 | Malicious code connects to attacker's server and send some very sensitive data such as passwords, photos or IP address.               |             80.00% |
+| 7     |                 949 | Attacker only enters the target system without performing other attacks.                                                              |             85.00% |
+| 8     |                 157 | Attacker enters the target system and connects to attacker's server to download and run additional malware.                           |             85.00% |
+| 9     |                 725 | Attacker uses a exploit to execute arbitrary code.                                                                                    |             70.00% |
+| 10    |                 255 | Malicious code downloads additional malicious programs and command from server and steals local data without uploading to the server. |             70.00% |
+| 11    |                 126 | Attacker directly executes the code and connects to the server.                                                                       |             75.00% |
+| 12    |                 646 | Malicious code connects to the attacker's server and downloads other malicious code without executing it.                             |             55.00% |
+| 13    |                 196 | Normal software execution and data reading behavior.                                                                                  |             66.70% |
+| 14    |                 165 | Malicious code executes undetected, connects to attacker's server and steals data.                                                    |             65.00% |
+| 15    |                 491 | Malicious code executes undetected.                                                                                                   |             57.10% |
+| 16    |                 161 | Malicious code executes undetected, steals data without connection to attacker's server.                                              |             50.00% |
+| 17    |                1200 | The attacker performs the attack through multiple steps and eventually steals the data.                                               |             13.30% |
+| 18    |                 141 | The attacker is already in the system and the deployed malicious code steals the data.                                                |             45.00% |
 
 CTIKR also adapt NLP techniques to identify the relations between CTI sentences and constructs a knowledge graph as the second type of the knowledge representation.
 
