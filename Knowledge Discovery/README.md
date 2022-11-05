@@ -8,6 +8,29 @@
 ## Approach
 For topic classification, open the **Topic Classification.ipynb**, and load the **Article Clustering Results Test Set.xlsx** which already has different feature values. Run the **Import the data** cell to load the **Article Clustering Results Test Set.xlsx** to generate a dataframe **df_test** contains all values. Then run the **Generate the feature vectors and cluster the blogs in the test set.** cell to summary one feature vector based on different values and find the most similar cluster in the training set based on the feature vector and **HDBSCANCluster**. The returned result is  list **testLabel** that contains cluster of article in the test set.
 
+The **Topic Classification.ipynb** also contains the code for silhouette coefficient calculation and 2D visualization of the test set. Run the **Calculation of silhouette coefficient for the test set** cell to calculate the silhouette coefficient and the **Generate the 2D visualization of the test set** cell to visualize the clustering result based on reduced dimensional feature vectors. The silhouette coefficient and rate of same topic as training set are shown in the following table:
+
+| Group | Silhouette Coefficients | Rate of Same Topic |
+|-------|-------------------------|--------------------|
+| 0     | 0.216                   | 80.00%             |
+| 1     | 0.225                   | 75.00%             |
+| 2     | 0.089                   | 80.00%             |
+| 3     | 0.254                   | 84.20%             |
+| 4     | 0.185                   | 85.00%             |
+| 5     | 0.357                   | 90.00%             |
+| 6     | 0.196                   | 55.00%             |
+| 7     | 0.330                   | 95.00%             |
+| 8     | 0.200                   | 71.40%             |
+| 9     | 0.366                   | 80.00%             |
+| 10    | 0.130                   | 25.00%             |
+| 11    | 0.270                   | 75.00%             |
+| 12    | 0.297                   | 65.00%             |
+| 13    | 0.191                   | 75.00%             |
+| 14    | 0.113                   | 54.50%             |
+| 15    | 0.348                   | 25.00%             |
+| 16    | 0.272                   | 33.30%             |
+| 17    | 0.222                   | 62.50%             |
+| 18    | 0.096                   | 43.75%             |
 ## Topic Classification result
 Title: Life Isn't So Beautiful Naked Security
 
