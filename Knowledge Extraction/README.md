@@ -7,7 +7,7 @@ The file **CTI_sentences.xlsx** contains sentences from OSCTI articles for the p
 
 We labeled every sentences of the 672 article from ATT&CK knowledge base, and got 8,408 sentences. Then, we use active learning to label 9,012 sentences from 5,110 OSCTI articles. The  active learning uses uncertainty sampling method to select the sentences. The uncertainty score is calculated by Classification Uncertainty, Classification Margin, and Classification Entropy. For $n$ tactics, the model accepts a sentence $s$ as input and predicts a probability (ranging from 0 to 1) for each tactics, denoted as $p_1, \ldots, p_n$. 
 
-The Classification Uncertainty is defined as: $p_{max}$ and 1, i.e., 1-$p_{max}$, which computes the difference between the highest probability value.
+The Classification Uncertainty is defined as: $p_{max}$ and 1, i.e., $1-p_{max}$, which computes the difference between the highest probability value.
 
 The Classification Margin is defined as: $p_{max-1}$, i.e., $p_{max}$ - $p_{max-1}$, which computes the difference between the highest probability value $p_{max}$ and second highest value $p_{max-1}$.
 
