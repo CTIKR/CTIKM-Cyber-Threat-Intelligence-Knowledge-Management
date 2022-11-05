@@ -5,7 +5,16 @@ CTIKR(Cyber Threat Intelligence Knowledge Representation) is a tool to extract k
 
 For a given article as the input, CTKIR can extract the following information: the most important sentences that describe attack's behavior and the tactics they used, the Cyber attack tactics included in the article, the graph of attack behavior, the cluster of the article. Based on those article information, CTKIR achieved the following applications on large scale articles: Entity Behavior Discovery, Topic Classification, Attack Campaign Discovery, Kill Chain Summary.
 
-## Requirements
+## Overview
+CTIKR contains three main components: 
+
+1.[Knowledge Extraction](https://github.com/CTIKR/CTIKR/tree/main/Knowledge%20Extraction): Automatic extraction of cyber threat knowledge. CTIKR has a knowledge base of CTI sentences based on existing cyber threat knowledge bases two machine learning models to identify the sentences.
+
+2.[Knowledge Representationn](https://github.com/CTIKR/CTIKR/tree/main/Knowledge%20Representation): Construction of article clusters and knowledge graph based on extracted knowledge.
+
+3.[Knowledge Discovery](https://github.com/CTIKR/CTIKR/tree/main/Knowledge%20Discovery): Four security applications based knowledge discovery of the cyber threat knowledge threat knowledge.  
+
+## Tool Requirements
 Python Version >= 3.8.0
 
 Python Library:
@@ -24,13 +33,6 @@ networkx >= 2.8.7
 
 cdlib >= 0.2.6
 
-## Approach
-CTIKR contains three main components: 
 
-1.[Knowledge Extraction](https://github.com/CTIKR/CTIKR/tree/main/Knowledge%20Extraction): Automatic extraction of cyber threat knowledge. CTIKR has a knowledge base of CTI sentences based on existing cyber threat knowledge bases two machine learning models to identify the sentences.
-
-2.[Knowledge Representationn](https://github.com/CTIKR/CTIKR/tree/main/Knowledge%20Representation): Construction of article clusters and knowledge graph based on extracted knowledge.
-
-3.[Knowledge Discovery](https://github.com/CTIKR/CTIKR/tree/main/Knowledge%20Discovery): Four security applications based knowledge discovery of the cyber threat knowledge threat knowledge.  
 
 
