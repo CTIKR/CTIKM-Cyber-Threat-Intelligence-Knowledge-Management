@@ -163,8 +163,3 @@ Model result:
 | The existence of the GrayKey isnt hugely surprising , nor is it a sign that the sky is falling .                                                                                                                                                                                                                | None                            | FALSE           |
 | However , it does mean that an i Phones security cannot be ensured if it falls into a third partys hands .                                                                                                                                                                                                      | None                            | FALSE           |
 
-
-Title:
-Group: 
-Topic Classification result: 
-Model result: 
