@@ -21,7 +21,170 @@ The CTIKR already provide two trained model, you can use the following code to l
 
 The active learning greatly improves the performance of tactic model. Our tactic model has average **88% precision** and **90% recall**, and our behavior model has average **83% precision** and **82% recall**. The following table shows tactic model performance on individual tactics before and after active learning.
 
-![image](https://i.imgur.com/2B7wEg2.jpg)
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-dvpl{border-color:inherit;text-align:right;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky"></th>
+    <th class="tg-c3ow" colspan="4">Before Active Learning&nbsp;&nbsp;</th>
+    <th class="tg-c3ow" colspan="4">After Active Learning&nbsp;&nbsp;</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Attack Tactic</td>
+    <td class="tg-dvpl">Precision</td>
+    <td class="tg-dvpl">Recall</td>
+    <td class="tg-dvpl">F1-score</td>
+    <td class="tg-dvpl">Support</td>
+    <td class="tg-dvpl">Precision</td>
+    <td class="tg-dvpl">Recall</td>
+    <td class="tg-dvpl">F1-score</td>
+    <td class="tg-dvpl">Support</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Initial Access</td>
+    <td class="tg-dvpl">0.67</td>
+    <td class="tg-dvpl">0.75</td>
+    <td class="tg-dvpl">0.71</td>
+    <td class="tg-dvpl">129</td>
+    <td class="tg-dvpl">0.88</td>
+    <td class="tg-dvpl">0.89</td>
+    <td class="tg-dvpl">0.88</td>
+    <td class="tg-dvpl">1556</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Execution</td>
+    <td class="tg-dvpl">0.17</td>
+    <td class="tg-dvpl">0.11</td>
+    <td class="tg-dvpl">0.13</td>
+    <td class="tg-dvpl">9</td>
+    <td class="tg-dvpl">0.90</td>
+    <td class="tg-dvpl">0.92</td>
+    <td class="tg-dvpl">0.91</td>
+    <td class="tg-dvpl">4836</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Defense Evasion</td>
+    <td class="tg-dvpl">0.50</td>
+    <td class="tg-dvpl">0.14</td>
+    <td class="tg-dvpl">0.22</td>
+    <td class="tg-dvpl">7</td>
+    <td class="tg-dvpl">0.85</td>
+    <td class="tg-dvpl">0.86</td>
+    <td class="tg-dvpl">0.86</td>
+    <td class="tg-dvpl">1686</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Command and Control</td>
+    <td class="tg-dvpl">0.05</td>
+    <td class="tg-dvpl">0.06</td>
+    <td class="tg-dvpl">0.05</td>
+    <td class="tg-dvpl">17</td>
+    <td class="tg-dvpl">0.84</td>
+    <td class="tg-dvpl">0.87</td>
+    <td class="tg-dvpl">0.85</td>
+    <td class="tg-dvpl">2261</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Privilege Escalation</td>
+    <td class="tg-dvpl">0.35</td>
+    <td class="tg-dvpl">0.39</td>
+    <td class="tg-dvpl">0.37</td>
+    <td class="tg-dvpl">23</td>
+    <td class="tg-dvpl">0.89</td>
+    <td class="tg-dvpl">0.90</td>
+    <td class="tg-dvpl">0.89</td>
+    <td class="tg-dvpl">918</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Persistence</td>
+    <td class="tg-dvpl">0.00</td>
+    <td class="tg-dvpl">0.00</td>
+    <td class="tg-dvpl">0.00</td>
+    <td class="tg-dvpl">2</td>
+    <td class="tg-dvpl">0.91</td>
+    <td class="tg-dvpl">0.93</td>
+    <td class="tg-dvpl">0.92</td>
+    <td class="tg-dvpl">965</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Lateral Movement</td>
+    <td class="tg-dvpl">0.00</td>
+    <td class="tg-dvpl">0.00</td>
+    <td class="tg-dvpl">0.00</td>
+    <td class="tg-dvpl">3</td>
+    <td class="tg-dvpl">0.90</td>
+    <td class="tg-dvpl">0.91</td>
+    <td class="tg-dvpl">0.90</td>
+    <td class="tg-dvpl">989</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Data Leak</td>
+    <td class="tg-dvpl">0.18</td>
+    <td class="tg-dvpl">0.12</td>
+    <td class="tg-dvpl">0.14</td>
+    <td class="tg-dvpl">17</td>
+    <td class="tg-dvpl">0.88</td>
+    <td class="tg-dvpl">0.89</td>
+    <td class="tg-dvpl">0.89</td>
+    <td class="tg-dvpl">3352</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Exfiltration</td>
+    <td class="tg-dvpl">0.00</td>
+    <td class="tg-dvpl">0.00</td>
+    <td class="tg-dvpl">0.00</td>
+    <td class="tg-dvpl">4</td>
+    <td class="tg-dvpl">0.84</td>
+    <td class="tg-dvpl">0.89</td>
+    <td class="tg-dvpl">0.86</td>
+    <td class="tg-dvpl">1073</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Impact</td>
+    <td class="tg-dvpl">0.00</td>
+    <td class="tg-dvpl">0.00</td>
+    <td class="tg-dvpl">0.00</td>
+    <td class="tg-dvpl">0</td>
+    <td class="tg-dvpl">0.94</td>
+    <td class="tg-dvpl">0.92</td>
+    <td class="tg-dvpl">0.93</td>
+    <td class="tg-dvpl">1464</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Macro Average</td>
+    <td class="tg-dvpl">0.21</td>
+    <td class="tg-dvpl">0.17</td>
+    <td class="tg-dvpl">0.18</td>
+    <td class="tg-dvpl">211</td>
+    <td class="tg-dvpl">0.88</td>
+    <td class="tg-dvpl">0.90</td>
+    <td class="tg-dvpl">0.89</td>
+    <td class="tg-dvpl">19100</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Weighted Average</td>
+    <td class="tg-dvpl">0.49</td>
+    <td class="tg-dvpl">0.53</td>
+    <td class="tg-dvpl">0.50</td>
+    <td class="tg-dvpl">211</td>
+    <td class="tg-dvpl">0.88</td>
+    <td class="tg-dvpl">0.90</td>
+    <td class="tg-dvpl">0.89</td>
+    <td class="tg-dvpl">19100</td>
+  </tr>
+</tbody>
+</table>
 
 To use the model, download the **'tactic model.zip'** or **'behavior model.zip'** file from our [huggingface repo](https://huggingface.co/CTIKR/CTIKR/tree/main) and unzip at the same folder. Open the jupyter notebook Knowledge Extraction Model Training.ipynb, modify the variable ** my_best_model_dir** to './model'. Then only run the **'Setup'** and **'Evaluation'** cell. The variable y_pred contains the list of inference results. 
 
