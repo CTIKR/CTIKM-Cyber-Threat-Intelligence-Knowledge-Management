@@ -24,10 +24,10 @@ networkx >= 2.8.7
 
 cdlib >= 0.2.6
 
-## Usage
+## Approach
 CTIKR contains three main components: 
-1. Automatic extraction of cyber threat knowledge. CTIKR has a knowledge base of CTI sentences based on existing cyber threat knowledge bases two machine learning models to identify the sentences. Detailed instruction is shown in [Knowledge Extraction](https://github.com/CTIKR/CTIKR/tree/main/Knowledge%20Extraction).
-2. Construction of article clusters and knowledge graph based on extracted knowledge. Detailed instruction is shown in [Knowledge Representationn](https://github.com/CTIKR/CTIKR/tree/main/Knowledge%20Representation). 
-3. Four security applications based knowledge discovery of the cyber threat knowledge threat knowledge. Detailed instruction is shown in [Knowledge Discovery](https://github.com/CTIKR/CTIKR/tree/main/Knowledge%20Discovery). 
+1.[Knowledge Extraction](https://github.com/CTIKR/CTIKR/tree/main/Knowledge%20Extraction): Automatic extraction of cyber threat knowledge. CTIKR has a knowledge base of CTI sentences based on existing cyber threat knowledge bases two machine learning models to identify the sentences.
+2.[Knowledge Representationn](https://github.com/CTIKR/CTIKR/tree/main/Knowledge%20Representation): Construction of article clusters and knowledge graph based on extracted knowledge.
+3.[Knowledge Discovery](https://github.com/CTIKR/CTIKR/tree/main/Knowledge%20Discovery): Four security applications based knowledge discovery of the cyber threat knowledge threat knowledge.  
 
 
