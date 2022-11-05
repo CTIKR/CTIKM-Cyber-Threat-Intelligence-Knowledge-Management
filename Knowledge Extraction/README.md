@@ -16,7 +16,7 @@ The active learning greatly improves the performance of tactic model. Our tactic
 
 ![image](https://i.imgur.com/2B7wEg2.jpg)
 
-To use the model, download the **'tactic model.zip'** or **'behavior model.zip'** file and unzip at the same folder. Open the jupyter notebook Knowledge Extraction Model Training.ipynb, modify the variable ** my_best_model_dir** to './model'. Then only run the **'Setup'** and **'Evaluation'** cell. The variable y_pred contains the list of inference results. 
+To use the model, download the **'tactic model.zip'** or **'behavior model.zip'** file from our [huggingface repo](https://huggingface.co/CTIKR/CTIKR/tree/main) and unzip at the same folder. Open the jupyter notebook Knowledge Extraction Model Training.ipynb, modify the variable ** my_best_model_dir** to './model'. Then only run the **'Setup'** and **'Evaluation'** cell. The variable y_pred contains the list of inference results. 
 
 For train own model, you should input the training data as the 'sentence.pkl' at the **'Setup'** cell, then run the **'Training'** cell. The model training and evaluation follow the k-fold cross validation. At each fold, the input format dataframe should be [[text1, label1], [text2，label2], ..., [textn，labeln]] with integer label . After running the 'Training' cell, the trained model will be saved at the 'clfmodel/k/best_model' folder.
 
