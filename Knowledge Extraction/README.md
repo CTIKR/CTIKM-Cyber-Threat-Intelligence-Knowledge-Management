@@ -5,15 +5,14 @@ The first step of CTIKR is to train classification model and automatically obtai
 ## Introduction
 The file **CTI_sentences.xlsx** contains sentences from OSCTI articles for the purpose of training of the classification model and following evaluation. The 'Sentence' column contains the sentence text, the 'Tactics' column contains the sentence's Cyber attack tactic label, and the 'Behavior' column contains the sentence's Cyber attack behavior label.
 
-We labeled every sentences of the 672 article from ATT&CK knowledge base, and got 8,408 sentences. Then, we use active learning with uncertainty sampling to label 9,012 sentences from 5,110 OSCTI articles.
+We labeled every sentences of the 672 article from ATT&CK knowledge base, and got 8,408 sentences. Then, we use active learning to label 9,012 sentences from 5,110 OSCTI articles. The  active learning uses uncertainty sampling method to select the sentences. The uncertainty score is calculated by Classification Uncertainty, Classification Margin, and Classification Entropy. For $n$ tactics, the model accepts a sentence $s$ as input and predicts a probability (ranging from 0 to 1) for each tactics, denoted as $p_1, \ldots, p_n$. 
 
-for $n$ tactics, the model accepts a sentence $s$ as input and predicts a probability (ranging from 0 to 1) for each tactics, denoted as $p_1, \ldots, p_n$.
-% For a sentence with $n$ possible tactics, the tactics model outputs $n$ values with the range from 0 to 1 which represent the probability $p$. 
-Based on these probability values, \tool further computes three metrics to measure the confidence of the prediction:
-\begin{itemize}[noitemsep, topsep=1pt, partopsep=1pt, listparindent=\parindent, leftmargin=*]
-    \item \textit{Classification Uncertainty}: $p_{max}$ and 1, \ie 1-$p_{max}$, which computes the difference between the highest probability value.
-    \item \textit{Classification Margin}: $p_{max-1}$, \ie $p_{max}$ - $p_{max-1}$, which computes the difference between the highest probability value $p_{max}$ and second highest value $p_{max-1}$.
-    \item \textit{Classification Entropy}: –$\sum\limits_{i=1}^{n} \left ( p_{i}\log_{2}{p_{i}}\right )$, which computes the information entropy of all probability values.
+The Classification Uncertainty is defined as: $p_{max}$ and 1, i.e., 1-$p_{max}$, which computes the difference between the highest probability value.
+
+The Classification Margin is defined as: $p_{max-1}$, i.e., $p_{max}$ - $p_{max-1}$, which computes the difference between the highest probability value $p_{max}$ and second highest value $p_{max-1}$.
+
+The Classification Entropy is defined as: $-\sum\limits_{i=1}^{n}\left(p_{i}\log_{2}{p_{i}}\right)$, which computes the information entropy of all probability values.
+
     
 In total, 17,420 sentences are labeled with the Cyber attack tactics. Among the 17,420 sentences, we further labeled 1,023 sentences describing attack behavior and 940 sentences not describing attack behavior as the negative samples.
 
