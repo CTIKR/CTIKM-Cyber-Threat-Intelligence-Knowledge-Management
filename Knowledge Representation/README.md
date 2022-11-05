@@ -16,4 +16,4 @@ To evaluate the clustering result, run the **Calculation of silhouette coefficie
 
 Additionally, run the **Generate the 2D visualization of the training set** cell to visualize the clustering result based on reduced dimensional feature vectors. Each point represents an article, and the color of the point represents the cluster of the article. Our clustering result is shown in the following figure.
 
-![image](https://i.imgur.com/O1X5nri.jpg)
+![image](https://i.imgur.com/z8fkI6j.jpg)
