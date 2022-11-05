@@ -34,7 +34,7 @@ To apply the article clustering algorithm, open the **Build article cluster.ipyn
 
 To evaluate the clustering result, run the **Calculation of silhouette coefficient for the training sett** cell to calculate the silhouette coefficient of the clustering result. The value of the silhouette coefficient ranges from -1 to 1, where 1 represents the best clustering, -1 represents the worst clustering.
 
-Our 
+Our article clusters has following silhouette coefficient: 
 
 | Group | Number of articles | Silhouette Coefficient |
 |-------|--------------------|------------------------|
