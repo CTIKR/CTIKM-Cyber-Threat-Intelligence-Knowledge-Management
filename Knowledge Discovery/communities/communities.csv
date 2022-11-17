@@ -1,0 +1,37 @@
+"ID","Valid? ","Informative?","#Nodes","#Edges","#Articles","Comment"
+0,1,1,10,9,7,"facts about iFrame"
+1,1,1,9,8,8,"facts about IP addresses"
+2,1,1,9,8,8,"facts about IP addresses"
+3,1,1,8,7,12,"facts about the Zeus malware"
+4,1,1,7,6,4,"Campaign using the Stuxnet"
+5,1,1,6,5,3,"facts about the Ekw malware"
+6,1,1,6,5,4,"Malwares executing payloads as background prosess"
+7,1,1,6,5,5,"Malwares detected by Sophos"
+8,1,0,5,4,3,
+9,1,0,5,4,3,
+10,1,0,5,4,3,
+11,1,1,5,4,2,"two campaigns sending ransomware cerber "
+12,1,1,5,4,4,"Capabilities of KOOBFACE"
+13,1,0,4,3,2,
+14,1,1,4,3,3,"Capability of cutwail"
+15,1,1,4,3,3,"Malwares exfiltrate data via sms"
+16,1,1,4,3,3,"Campaign in which senit implants lojax and uses lojack to maintain foothold"
+17,1,0,4,3,3,"facts about dridex"
+18,1,1,4,4,5,"facts about Asprox"
+19,1,0,4,3,3,"facts about firewall"
+20,1,0,4,3,3,"knowledge about rootkit"
+21,1,1,3,2,2,"phoenix exploit kit"
+22,1,1,3,2,2,"ivy"
+23,1,1,3,2,2,"encrypted malware"
+24,1,1,3,2,2,"Malwares behavior"
+25,1,0,3,2,2,
+26,1,0,3,2,2,
+27,1,1,3,2,3,"Behavior of malware bedep"
+28,1,0,3,2,2,
+29,1,1,3,2,2,"behavior of malware vawtrak"
+30,1,1,3,2,2,"facts about Morto"
+31,1,1,3,2,2,"behavior of malware Pupy"
+32,1,1,3,2,2,"Behavior of Ginsu"
+33,1,1,3,2,2,"capability of ESET"
+34,1,0,3,2,2,
+35,1,0,3,2,2,

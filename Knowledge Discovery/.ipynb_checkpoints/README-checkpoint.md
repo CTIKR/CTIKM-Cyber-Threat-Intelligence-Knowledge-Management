@@ -31,9 +31,6 @@ The **Topic Classification.ipynb** also contains the code for silhouette coeffic
 | 16    | 0.272                   | 33.30%             |
 | 17    | 0.222                   | 62.50%             |
 | 18    | 0.096                   | 43.75%             |
-
-For community generation and entity behavior discovery, open the **Knowledge Discovery.ipynb**. First, load the knowledge graph you generated from the knowledge representation module. Run the **Entity Behavior Discovery** cell with your query to discover the behavior of the entity. Run the **Community Detection** cell to generate communities.
-
 ## Topic Classification result
 Title: Life Isn't So Beautiful Naked Security
 
@@ -166,5 +163,3 @@ Model result:
 | The existence of the GrayKey isnt hugely surprising , nor is it a sign that the sky is falling .                                                                                                                                                                                                                | None                            | FALSE           |
 | However , it does mean that an i Phones security cannot be ensured if it falls into a third partys hands .                                                                                                                                                                                                      | None                            | FALSE           |
 
-## Community Detection result
-We found 35 communities from the generated knowledge graph. We list the results in the folder **communities**.
