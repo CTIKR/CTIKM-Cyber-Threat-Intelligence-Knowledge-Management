@@ -29,7 +29,7 @@ From the 52,354 training OSCTI articles, CTIKR models identified 8,456 articles 
 
 CTIKR also adapt NLP techniques to identify the relations between CTI sentences and constructs a knowledge graph as the second type of the knowledge representation. We extract triples from the the texts in group 1, 2, 4, 6, 7, 8, 11 and 14. The triples are further filtered using the confidence from the behavior model and NER model. The remaining triples are used to build a knowledge graph.  
 
-## Usage
+## Introduction 
 To apply the article clustering algorithm, open the **Build article cluster.ipynb**, and load the **Article Clustering Results Training Set.xlsx** which already has different feature values. Run the **Import the data** cell to load the **Article Clustering Results Training Set.xlsx** to generate a dataframe **df_train** contains all values. Then run the **Generate the feature vector and cluster the articles in the training set** cell to summary one feature vector based on different values, and cluster the OSCTI training articles based on the feature vector. The returned result is the new version of dataframe **df_train_cluster** which has a new column **HDBSCAN Cluster** to show the cluster number of each article and a variable **HDBSCANCluster** which is the HDBSCAN model.
 
 To evaluate the clustering result, run the **Calculation of silhouette coefficient for the training sett** cell to calculate the silhouette coefficient of the clustering result. The value of the silhouette coefficient ranges from -1 to 1, where 1 represents the best clustering, -1 represents the worst clustering.
