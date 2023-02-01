@@ -1,6 +1,6 @@
 # Knowledge Extraction
 
-The first step of CTIKR is to train classification model and automatically obtain different types of CTI sentences from OSCTI articles using NLP model. We use the python library **simpletransformers** to perform model training and inference.
+The first step of CTIKM is to train classification model and automatically obtain different types of CTI sentences from OSCTI articles using NLP model. We use the python library **simpletransformers** to perform model training and inference.
 
 ## Introduction
 The file **CTI_sentences.xlsx** contains sentences from OSCTI articles for the purpose of training of the classification model and following evaluation. The 'Sentence' column contains the sentence text, the 'Tactics' column contains the sentence's Cyber attack tactic label, and the 'Behavior' column contains the sentence's Cyber attack behavior label.
@@ -17,7 +17,7 @@ The Classification Entropy is defined as: $-\sum\limits_{i=1}^{n}\left(p_{i}\log
 In total, 17,420 sentences are labeled with the Cyber attack tactics. Among the 17,420 sentences, we further labeled 1,023 sentences describing attack behavior and 940 sentences not describing attack behavior as the negative samples.
 
 ## Tool implement 
-The CTIKR already provide two trained model, you can use the following code to load the model and predict the CTI sentences. 
+The CTIKM already provide two trained model, you can use the following code to load the model and predict the CTI sentences. 
 
 The active learning greatly improves the performance of tactic model. Our tactic model has average **88% precision** and **90% recall**, and our behavior model has average **83% precision** and **82% recall**. The following table shows tactic model performance on individual tactics before and after active learning.
 
