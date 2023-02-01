@@ -15,7 +15,13 @@ The Classification Entropy is defined as: $-\sum\limits_{i=1}^{n}\left(p_{i}\log
 
     
 In total, 17,420 sentences are labeled with the Cyber attack tactics. Among the 17,420 sentences, we further labeled 1,023 sentences describing attack behavior and 940 sentences not describing attack behavior as the negative samples. The following figure shows the distribution of the tactic labels in whole dataset. 
-![image](https://i.imgur.com/KXw6XwU.png)
+
+<p align="center">
+  <b> Figure: Distribution of Attack Tactics </b>
+</p>
+<p align="center">
+  <img src="https://i.imgur.com/KXw6XwU.png">
+</p>
 
 
 ## Tool implement 
