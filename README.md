@@ -8,7 +8,7 @@ For a given article as the input, CTKIR can extract the following information: t
 ## Overview
 CTIKM contains three main components. The overview figure is shown below.
 
-![image](https://i.imgur.com/friVNbz.png)
+![image](https://i.imgur.com/ctPhnKu.png)
 
 1.[Knowledge Extraction](https://github.com/CTIKR/CTIKM/tree/main/Knowledge%20Extraction): Automatic extraction of cyber threat knowledge. CTIKM has a knowledge base of CTI sentences based on existing cyber threat knowledge bases two machine learning models to identify the sentences.
 
