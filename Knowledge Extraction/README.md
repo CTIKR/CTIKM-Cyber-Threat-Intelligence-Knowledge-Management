@@ -14,7 +14,7 @@ The Classification Margin is defined as: $p_{max-1}$, i.e., $p_{max}$ - $p_{max-
 The Classification Entropy is defined as: $-\sum\limits_{i=1}^{n}\left(p_{i}\log_{2}{p_{i}}\right)$, which computes the information entropy of all probability values.
 
     
-In total, 17,420 sentences are labeled with the Cyber attack tactics. Among the 17,420 sentences, we further labeled 1,023 sentences describing attack behavior and 940 sentences not describing attack behavior as the negative samples. The following figure shows the distribution of the tactic labels in whole dataset. 
+In total, 17,420 sentences are labeled with the Cyber attack tactics. Among the 17,420 sentences, we further labeled 1,023 sentences describing attack behavior and 940 sentences not describing attack behavior as the negative samples. The following figure and table shows the distribution of the tactic labels and behavior labels in dataset. 
 
 <p align="center">
   <b> Figure: Distribution of Attack Tactics </b>
@@ -23,6 +23,28 @@ In total, 17,420 sentences are labeled with the Cyber attack tactics. Among the 
   <img src="https://i.imgur.com/KXw6XwU.png">
 </p>
 
+<p align="center">
+  <b> Table : Frequency Distribution Of Attack Tactics </b>
+</p>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-dvpl{border-color:inherit;text-align:right;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Attack Tactics Distribution In Dataset</th>
+    <th class="tg-dvpl">Sentences Count</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
 
 ## Tool implement 
 The CTIKM already provide two trained model, you can use the following code to load the model and predict the CTI sentences. 
