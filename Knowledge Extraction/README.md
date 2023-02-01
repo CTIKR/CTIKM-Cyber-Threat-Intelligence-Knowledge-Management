@@ -23,44 +23,22 @@ In total, 17,420 sentences are labeled with the Cyber attack tactics. Among the 
   <img src="https://i.imgur.com/KXw6XwU.png">
 </p>
 
-<p align="center">
-  <b> Table : Frequency Distribution Of Attack Tactics </b>
-</p>
-
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-dvpl{border-color:inherit;text-align:right;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-0pky">Attack Tactics Distribution In Dataset</th>
-    <th class="tg-dvpl">Sentences Count</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
+<b> Table : Frequency Distribution Of Attack Tactics </b>
+| Attack Tactics Distribution In Dataset 	| Sentences Count 	|
+|----------------------------------------	|----------------:	|
+| Sentences with 0 attack tactic         	|            4022 	|
+| Sentences with 1 attack tactic         	|            8437 	|
+| Sentences with 2 attack tactics        	|            4220 	|
+| Sentences with 3 attack tactics        	|             673 	|
+| Sentences with 4 attack tactics        	|              37 	|
+| Sentences with 5 attack tactics        	|              10 	|
+| Sentences with 6 attack tactics        	|               1 	|
 
 ## Tool implement 
 The CTIKM already provide two trained model, you can use the following code to load the model and predict the CTI sentences. 
 
 The active learning greatly improves the performance of tactic model. Our tactic model has average **88% precision** and **90% recall**, and our behavior model has average **83% precision** and **82% recall**. The following table shows tactic model performance on individual tactics before and after active learning.
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-dvpl{border-color:inherit;text-align:right;vertical-align:top}
-</style>
 <table class="tg">
 <thead>
   <tr>
