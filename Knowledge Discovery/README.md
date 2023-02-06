@@ -2,14 +2,24 @@
 
 
 
-## Introduction
+## Workflow
+**CTI Article Summary:**
+1. Collect test set articles from Knowledge Representation phase.
+2. Based on the **Knowledge Extraction** models, obtain the tactical label and behavioral label information of the articles in the test set. Create the **Article Clustering Results Test Set.xlsx** file by statistical analysis.
+3. Use the **Topic Classification.ipynb** file to unsupervised cluster the articles in the test set into different groups.
+4. Calculate the silhouette coefficient, manually inspect articles in different groups and identity whether the article's topic follow the table **Topics And Accuracy Of Article Clusters** in Knowledge Representation phase, and summary the result as table **Silhouette Coefficients And Topic Accuracy Of Test Set Article Clusters**.
+**Entity-Relationship Summary:**
+1. Download pkl file [**cluster_extracts_high_value.pkl**](https://huggingface.co/CTIKR/CTIKM_Cyber_Threat_Intelligence_Knowledge_Management/blob/main/cluster_extracts_high_value.pkl) to local folder. Use **Seacrch-On-Graph.ipynb** to search graph to reveal entities with most in-out edges relationship related between entities.
+2. Use **Knowledge Discovery.ipynb** to visualize sub-graph of specific entities, and communities.
 
 
 ## Approach
 For topic classification, open the **Topic Classification.ipynb**, and load the **Article Clustering Results Test Set.xlsx** which already has different feature values. Run the **Import the data** cell to load the **Article Clustering Results Test Set.xlsx** to generate a dataframe **df_test** contains all values. Then run the **Generate the feature vectors and cluster the blogs in the test set.** cell to summary one feature vector based on different values and find the most similar cluster in the training set based on the feature vector and **HDBSCANCluster**. The returned result is  list **testLabel** that contains cluster of article in the test set.
 
 The **Topic Classification.ipynb** also contains the code for silhouette coefficient calculation and 2D visualization of the test set. Run the **Calculation of silhouette coefficient for the test set** cell to calculate the silhouette coefficient and the **Generate the 2D visualization of the test set** cell to visualize the clustering result based on reduced dimensional feature vectors. The silhouette coefficient and rate of same topic as training set are shown in the following table:
-
+<p align="center">
+  <b>Silhouette Coefficients And Topic Accuracy Of Test Set Article Clusters</b>
+</p>
 | Group | Silhouette Coefficients | Rate of Same Topic |
 |-------|-------------------------|--------------------|
 | 0     | 0.216                   | 80.00%             |
