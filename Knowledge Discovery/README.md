@@ -8,6 +8,7 @@
 2. Based on the **Knowledge Extraction** models, obtain the tactical label and behavioral label information of the articles in the test set. Create the **Article Clustering Results Test Set.xlsx** file by statistical analysis.
 3. Use the **Topic Classification.ipynb** file to unsupervised cluster the articles in the test set into different groups.
 4. Calculate the silhouette coefficient, manually inspect articles in different groups and identity whether the article's topic follow the table **Topics And Accuracy Of Article Clusters** in Knowledge Representation phase, and summary the result as table **Silhouette Coefficients And Topic Accuracy Of Test Set Article Clusters**.
+
 **Entity-Relationship Summary:**
 1. Download pkl file [**cluster_extracts_high_value.pkl**](https://huggingface.co/CTIKR/CTIKM_Cyber_Threat_Intelligence_Knowledge_Management/blob/main/cluster_extracts_high_value.pkl) to local folder. Use **Seacrch-On-Graph.ipynb** to search graph to reveal entities with most in-out edges relationship related between entities.
 2. Use **Knowledge Discovery.ipynb** to visualize sub-graph of specific entities, and communities.
