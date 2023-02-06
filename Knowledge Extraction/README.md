@@ -2,7 +2,7 @@
 
 The first step of CTIKM is to train classification model and automatically obtain different types of CTI sentences from OSCTI articles using NLP model. We use the python library **simpletransformers** to perform model training and inference.
 
-##Workflow
+## Workflow
 1. Manually label Cyber threat sentences from selective articles, to create initial **CTI_sentences.xlsx**.
 2. Utilize **Knowledge Extraction Model Training.ipynb** to train an initial sentence text classification model. For the specific Cyber tactic where model show poor performance, use **Active learning uncertainty sampling.ipynb** to selectively extract sentences from all articles, label them and update **CTI_sentences.xlsx** file.
 3. After repeated iterations of the active learning, utilize **Knowledge Extraction Model Training.ipynb** to train high performance sentence text classification models.
