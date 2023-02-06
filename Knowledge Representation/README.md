@@ -5,6 +5,7 @@
 2. Based on the **Knowledge Extraction** models, obtain the tactical label and behavioral label information of the articles in the training set. Create the **Article Clustering Results Training Set.xlsx** file by statistical analysis.
 3. Use the **Article Clusters.ipynb** file to unsupervised cluster the articles in the training set into different groups.
 4. Manually inspecting different article groups, summarizing their topics and accuracy of same topic in group in that table **Topics And Accuracy Of Article Clusters**.
+5. Based on the **Knowledge Extraction** models, use **Extract NER.ipynb** to extract entities and their relationship from selective articles as triples, and save them as pkl file [**cluster_extracts_high_value.pkl**](https://huggingface.co/CTIKR/CTIKM_Cyber_Threat_Intelligence_Knowledge_Management/blob/main/cluster_extracts_high_value.pkl) for further analysis.
 
 
 ## Introduction
