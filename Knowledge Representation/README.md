@@ -1,9 +1,20 @@
 # Knowledge Representation
 
+## Workflow
+1. Remove the articles that were involved in the **Knowledge Extraction** dataset and divide the remaining articles into 70% test set and 30% training set.
+2. Based on the **Knowledge Extraction** models, obtain the tactical label and behavioral label information of the articles in the training set. Create the **Article Clustering Results Training Set.xlsx** file by statistical analysis.
+3. Use the **Article Clusters.ipynb** file to unsupervised cluster the articles in the training set into different groups.
+4. Manually inspecting different article groups, summarizing their topics and accuracy of same topic in group in that table **Topics And Accuracy Of Article Clusters**.
+
+
 ## Introduction
 CTIKM uses the two output models from the knowledge extraction component on the training OSCTI training articles to identify the CTI sentences from articles. Based on these CTI sentences, CTIKM then clusters the training OSCTI articles based on the features of their CTI sentences and outputs article clusters as the first type of the knowledge representation. 
 
 From the 52,354 training OSCTI articles, CTIKM models identified 8,456 articles that contain CTI sentences. We split them into 6,764 training articles and 1,692 testing articles. The training articles are used to train the article clustering model. The testing articles are used to evaluate the clustering and application of article topic classification. The 'Article Clustering Results Training Set.xlsx' contains these 6,764 articles and their corresponding feature vectors. Each row in the excel file represents a OSCTI article, and the columns shows their features. These feature are: results of tactic sentences and behavior sentences, tactics statistics of tactics sentences and CTI Sentences, sentence statistics of all sentences and CTI Sentences, IOC Words statistics of All sentences and CTI sentences, reduced dimensional model inference result embedding and reduced dimensional CTI sentence embedding. The 52,354 articles are clustered into 18 groups with meaningful topics as follows:
+
+<p align="center">
+  <b>Topics And Accuracy Of Article Clusters</b>
+</p>
 
 | Group | Topic                                                                                                                                 | Rate of Same Topic |
 |-------|---------------------------------------------------------------------------------------------------------------------------------------|--------------------|
